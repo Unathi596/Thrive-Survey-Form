@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+
+    <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey about the Thrive Accomodations situated in Johannesburg.</p>
+    </header>
+
+      <main>
+        <form id="survey-form">
+
+          <!--A fieldset that takes in the personal details of the user-->
+          <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name" id="name-label">Please Enter Your Name:</label>
+            <input type="text" id="name" required placeholder="Unathi Mashaba">
+            <br>
+            <label for="email" id="email-label">Please enter your email address:</label>
+            <input type="email" id="email" required placeholder="example@gmail.com">
+<br>
+<label for="number" id="number-label">Please enter your number:</label>
+<input type="number" id="number" placeholder="150" min="20" max="200">
+            </fieldset>
+
+            <br>
+
+            <!-- A fieldset that takes in all of the ratings provided by the user-->
+            <fieldset>
+                
+              <legend>Ratings</legend>
+              <label for="dropdown">Please choose which building that you want to rate:</label>
+              <select id="dropdown">
+                <option>Kingsway Place</option>
+                <option>Richmond Central</option>
+              </select>
+
+              <br><br>
+              <label for="Room-Type">Enter the type of room you are in:</label>
+              <br>
+              <input type="radio" value="Single" name="room" required>
+              <label for="single-room">Single</label>
+              <br>
+              <input type="radio" value="Sharing" name="room">
+              <label for="sharing-room">Sharing</label>
+              <br><br>
+              <label for="Checkbox">Please rate your choesen accomdation below:</label>
+              <br>
+              <input type="Checkbox" value="poor">
+              <label for="poor">Poor</label>
+              <br>
+              <input type="Checkbox" value="moderate">
+              <label for="moderate">Moderate</label>
+              <br>
+               <input type="Checkbox" value="good">
+              <label for="good">Good</label>
+              </fieldset>
+
+              <!-- Textarea for Additional Comments-->
+              <br>
+              <label for="comments">Additional Comments:</label>
+              <br>
+              <textarea id="additional comments"></textarea>
+              <br><br>
+              <button id="submit">Submit Survey</button>
+              
+          </form>
+        </main>
+
+  </body>
+</html>
